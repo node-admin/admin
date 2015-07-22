@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/css/style.css' />
+</head>
+<body>
+    <h1><%= title %></h1>
+   
+    <% if(user){ %>
+    	<p>Welcome to <%= user.name %></p>
+    	<a href="/logout">退出</a>
+  		<div class="">
+    		<a href="javascript:void(0)" id="submitfile">提交图片</a>
+    		<iframe src="/upload.html"></iframe>
+    	</div>
+    <% }else{%>
+    <form method="post" action="/login.do">
+    	name<input type="text" name="name" />
+    	password<input type="password" name="password" />
+    	<input type="submit" />
+    </form>
+    <% } %>
+</body>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/upload.js"></script>
+<script type="text/javascript">
+	
+		
+</script>
+
+
+</html>

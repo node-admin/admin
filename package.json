@@ -1,0 +1,21 @@
+{
+  "name": "admin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "ejs": "*",
+    "express": "*",
+    "morgan": "*",
+    "serve-favicon": "*",
+    "express-session":"*",
+    "connect-mongo":"*",
+    "mongoose":"*",
+    "multer":"*"
+  }
+}
