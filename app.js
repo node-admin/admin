@@ -8,9 +8,6 @@ var routes       = require('./routes/index');
 var config       = require('./config');
 var ejs          = require('ejs');
 
-var session = require('express-session');
-var MongoStore = require('connect-mongo')(session);
-
 var app = express();
 
 app.set('port',process.env.PORT || 3000);
@@ -23,17 +20,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use(session({
-    secret:config.cookieSecret,
-    key:config.db,
-    cookie:{maxAge:1000*60*60*24*30},
-    store:new MongoStore({
-        db:config.db,
-        host:config.host,
-        port:config.port
-    })
-}))
 
 
 routes(app);

@@ -1,33 +1,228 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<title><%= title %></title>
-	<link rel='stylesheet' href='/css/style.css' />
+    <meta charset="utf-8">
+	<title>网站开发</title>
+	<link rel="stylesheet" href="/css/reset.css" />
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/icon/iconfont.css">
 </head>
 <body>
-    <h1><%= title %></h1>
-   
-    <% if(user){ %>
-    	<p>Welcome to <%= user.name %></p>
-    	<a href="/logout">退出</a>
-  		<div class="">
-    		<a href="javascript:void(0)" id="submitfile">提交图片</a>
-    		<iframe src="/upload.html"></iframe>
-    	</div>
-    <% }else{%>
-    <form method="post" action="/login.do">
-    	name<input type="text" name="name" />
-    	password<input type="password" name="password" />
-    	<input type="submit" />
-    </form>
-    <% } %>
-</body>
-<script type="text/javascript" src="/js/jquery.min.js"></script>
-<script type="text/javascript" src="/js/upload.js"></script>
-<script type="text/javascript">
-	
+<div class="wp">	
+
+	<div class="wp-nav">
+		<ul>
+			<li class="on"><span class="iconfont">&#xe607;</span></li>
+			<li><span class="iconfont">&#xe608;</span></li>
+		</ul>
+	</div>
+
+	<div class="wp-cont">
 		
+		<div class="chat">
+			<div class="chat-left">
+				<div class="chat-search">
+					<input type="text" />
+				</div>
+				<div class="chat-tab">
+					<a href="javascript:void(0)">
+						<span class="iconfont">&#xe604;</span>
+						<em>对话</em>
+					</a>
+					<a href="javascript:void(0)">
+						<span class="iconfont">&#xe606;</span>
+						<em>好友列表</em>
+					</a>
+					<a href="javascript:void(0)">
+						<span class="iconfont">&#xe600;</span>
+						<em>添加好友</em>
+					</a>
+				</div>
+				
+				<div class="chat-lists chat-dialogue">
+					<ul>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">王飞</span>
+							<p>你是个傻逼</p>
+							<b>7</b>
+						</li>
+						<li class="on">
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">猪儿强</span>
+							<p>最新的聊天内容最新的聊天内容最新的聊天内容最新的聊天内容最新的聊天内容最新的聊天内容最新的聊天内容最新的聊天内容</p>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">张博</span>
+							<p>王飞是单身狗</p>
+							<b>5</b>
+						</li>
+					</ul>
+				</div>
+				<div class="chat-lists" style="display:none;">
+					<ul>
+						<li class="chat-ini">
+							<em>A</em>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li class="chat-ini">
+							<em>B</em>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li class="chat-ini">
+							<em>H</em>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">adsasfd</span>
+						</li>
+						<li class="chat-ini">
+							<em>X</em>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+						<li>
+							<span class="chat-photo"><img src="images/photo.png" /></span>
+							<span class="chat-name">姓名</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="chat-right">
+				<div class="chat-info">
+					<span>用户名</span>
+				</div>
+				<div class="chat-text">
+					<a href="javascript:void(0);" class="chat-text-more">显示更早的消息</a>
+					<div class="chat-text-you clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">16:20</p>
+						<p class="chat-text-message">你是猪儿强吗</p>
+					</div>
+					<div class="chat-text-me clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">2013-05-10 16:20</p>
+						<p class="chat-text-message">是的</p>
+					</div>
+					<div class="chat-text-me clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">2013-05-10 16:20</p>
+						<p class="chat-text-message">你好</p>
+					</div>
+					<div class="chat-text-you clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">16:20</p>
+						<p class="chat-text-message">你好</p>
+					</div>
+					<div class="chat-text-you clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">16:20</p>
+						<p class="chat-text-message">sb------------------------------------------------------------</p>
+					</div>
+					<div class="chat-text-me clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">2013-05-10 16:20</p>
+						<p class="chat-text-message">我觉得你就是sb，能不能有点素质。</p>
+					</div>
+					<div class="chat-text-you clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">16:20</p>
+						<p class="chat-text-message">你好</p>
+					</div>
+					<div class="chat-text-you clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">16:20</p>
+						<p class="chat-text-message">sb------------------------------------------------------------</p>
+					</div>
+					<div class="chat-text-me clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">2013-05-10 16:20</p>
+						<p class="chat-text-message">我觉得你就是sb，能不能有点素质。逗比，傻逼，隔壁老王是二逼。</p>
+					</div>
+					<div class="chat-text-you clearfix">
+						<a href="" class="chat-text-photo"><img src="images/photo.png" /></a>
+						<p class="chat-text-time">16:20</p>
+						<p class="chat-text-message">我是隔壁老王，单身狗王，垫底大王。</p>
+					</div>
+				</div>
+				<div class="chat-edit">
+					<div class="chat-func">
+					</div>
+					<div class="chat-input" contenteditable="true">
+
+					</div>
+					<div class="chat-submit">
+						<p>按ctrl+enter换行</p>
+						<a href="">发 送</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<script src="/js/jquery.min.js"></script>
+<script type="text/javascript">
+
 </script>
 
-
+</body>
 </html>
