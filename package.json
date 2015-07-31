@@ -16,6 +16,7 @@
     "express-session":"*",
     "connect-mongo":"*",
     "mongoose":"*",
-    "multer":"*"
+    "multer":"*",
+    "socket.io":"*"
   }
 }
