@@ -1,19 +1,66 @@
-.work{width:800px;
+.work{
     position:relative;
     height:100%;
     background:#fff;
     box-shadow:2px 0 2px rgba(0,0,0,.3);
 }
-
-.work-left{
+.work-folder{
     position:absolute;top:0;left:0;bottom:0;
-    width:300px;
+    width:150px;
     border-right:1px solid #ccc;
     background:#f1f1f1;
     box-sizing:border-box;
 }
+.work-file{
+    position:absolute;top:0;left:150px;bottom:0;
+    width:250px;
+    border-right:1px solid #ccc;
+    border-left:1px solid #fff;
+    background:#f1f1f1;
+    box-sizing:border-box;
+}
 .work-right{position:relative;
-    margin-left:300px;
+    margin-left:400px;
     height:100%;
     background:#fff;
 }
+
+
+
+.work-folder li{
+    position:relative;
+    padding-left:15px;
+    height:32px;
+    line-height:32px;font-size:14px;
+    border-bottom:1px solid #ddd;
+    box-shadow:0 1px 0 #fff;
+}
+.work-folder li .iconfont{
+    float:left;margin-right:10px;
+    font-size:20px;line-height:32px;
+}
+
+.work-folder li.on{
+    color:#08c;
+    background:#fff;
+}
+.work-folder li.on:after{
+    display:block;
+    content:' ';
+    position:absolute;right:10px;top:6px;
+    width:20px;height:20px;
+    background:url(images/chat-on.png) 0 0 no-repeat;
+}
+
+.work-file .work-addbtn{
+    display:block;height:30px;
+    border-bottom:1px solid #ddd;
+    box-shadow:0 1px 0 #fff;
+}
+.work-show li{
+    height:100px;
+    border-bottom:1px solid #ccc;
+    box-shadow:0 1px 0 #fff;
+}
+
+.work-show li.on{}

@@ -139,7 +139,7 @@
     line-height:14px;font-size:12px;color:#999;
 }
 .chat-dialogue li.on{
-    background:#ddd;
+    background:#fff;
 }
 .chat-dialogue li.on:after{
     display:block;
