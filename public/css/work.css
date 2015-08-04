@@ -11,20 +11,19 @@
     background:#f1f1f1;
     box-sizing:border-box;
 }
-.work-file{
+.work-file{overflow:auto;
     position:absolute;top:0;left:150px;bottom:0;
-    width:250px;
+    width:500px;
     border-right:1px solid #ccc;
-    border-left:1px solid #fff;
     background:#f1f1f1;
     box-sizing:border-box;
 }
-.work-right{position:relative;
-    margin-left:400px;
+/*.work-right{position:relative;
+    margin-left:150px;
     height:100%;
     background:#fff;
 }
-
+*/
 
 
 .work-folder li{
@@ -41,7 +40,7 @@
 }
 
 .work-folder li.on{
-    color:#08c;
+    color:#333;
     background:#fff;
 }
 .work-folder li.on:after{
@@ -52,15 +51,39 @@
     background:url(images/chat-on.png) 0 0 no-repeat;
 }
 
-.work-file .work-addbtn{
-    display:block;height:30px;
-    border-bottom:1px solid #ddd;
-    box-shadow:0 1px 0 #fff;
+.work-add-top{
+    height:50px;
+    border-bottom:1px solid #ddd;}
+.work-add-bottom{
+    height:50px;
+    border-top:1px solid #fff;}
+.work-add-top a,.work-add-bottom a{
+    display:block;
+    line-height:50px;text-align:center;color:#08c;
 }
-.work-show li{
-    height:100px;
-    border-bottom:1px solid #ccc;
-    box-shadow:0 1px 0 #fff;
+.work-add-top .iconfont,.work-add-bottom .iconfont{
+    margin-right:5px;
+    font-size:15px;
 }
 
-.work-show li.on{}
+.work-theory li{
+    display:block;position:relative;
+    padding:10px 20px;
+    background:#f1f1f1;
+    border-bottom:1px solid #ddd;
+    border-top:1px solid #fff;
+    /*border-radius:5px;*/
+    box-sizing:border-box;
+}
+.work-theory li strong{position:relative;overflow:hidden;
+    display:block;
+    height:18px;overflow:hidden;
+    font-weight:bold;
+    font-size:14px;line-height:18px;color:#333;
+}
+.work-theory li p{
+
+}
+.work-theory li.on{
+    background:#fff;
+}

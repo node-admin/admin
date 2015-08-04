@@ -103,31 +103,6 @@
     height:50px;overflow:hidden;
     line-height:50px;font-size:14px;color:#666;}
 
-    .chat-lists::-webkit-scrollbar {
-        width: 10px;height:10px;
-        transition:all ease-out .3s;
-    } /* 这是针对缺省样式 (必须的) */
-
-    .chat-lists::-webkit-scrollbar-track {
-          background-color:#f1f1f1;
-          border-left:1px solid #ddd;
-    } /* 滚动条的滑轨背景颜色 */
-    .chat-lists::-webkit-scrollbar-thumb {
-          background-color:#aaa;
-          background:url(images/scroll.png) 0 0 repeat-y;
-          border:1px solid #aaaaaa;
-          border-right:none;
-          border-radius:5px;
-    } /* 滑块颜色 */
-
-    .chat-lists::-webkit-scrollbar-button {
-          display:none;
-    } /* 滑轨两头的监听按钮颜色 */
-
-    .chat-lists::-webkit-scrollbar-corner {
-          background-color: black;
-    } /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
-
 .chat-dialogue .chat-name{
     padding-top:10px;
     height:16px;overflow:hidden;
@@ -236,31 +211,6 @@
     background:#aaa;
     border-radius:20px;
 }
-    .chat-text::-webkit-scrollbar {
-        width: 10px;height:10px;
-        transition:all ease-out .3s;
-    } /* 这是针对缺省样式 (必须的) */
-
-    .chat-text::-webkit-scrollbar-track {
-          background-color:#f1f1f1;
-          border-left:1px solid #ddd;
-    } /* 滚动条的滑轨背景颜色 */
-    .chat-text::-webkit-scrollbar-thumb {
-          background-color:#aaa;
-          background:url(images/scroll.png) 0 0 repeat-y;
-          border:1px solid #aaaaaa;
-          border-right:none;
-          border-radius:5px;
-    } /* 滑块颜色 */
-
-    .chat-text::-webkit-scrollbar-button {
-          display:none;
-    } /* 滑轨两头的监听按钮颜色 */
-
-    .chat-text::-webkit-scrollbar-corner {
-          background-color: black;
-    } /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
-
 /**/
 .chat-edit{
     position:absolute;bottom:0;right:0;left:0;
