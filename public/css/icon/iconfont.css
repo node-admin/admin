@@ -17,8 +17,10 @@
 }
 .icon-tianjiayonghu:before { content: "\e600"; }
 .icon-zixunxinxi:before { content: "\e60c"; }
+.icon-mulu:before { content: "\e60f"; }
 .icon-shipinziliao:before { content: "\e60d"; }
 .icon-plus:before { content: "\e601"; }
+.icon-jiantouxia:before { content: "\e611"; }
 .icon-shoucang:before { content: "\e609"; }
 .icon-libreoffice:before { content: "\e60e"; }
 .icon-iconfonthaoyou:before { content: "\e607"; }
@@ -26,7 +28,10 @@
 .icon-xiegonggao:before { content: "\e608"; }
 .icon-biaoqing:before { content: "\e603"; }
 .icon-shouye:before { content: "\e60a"; }
+.icon-zhucedenglutouxiang:before { content: "\e612"; }
 .icon-wenzhangneirong:before { content: "\e60b"; }
 .icon-svg37:before { content: "\e604"; }
+.icon-guanbi:before { content: "\e613"; }
 .icon-sousuo:before { content: "\e605"; }
 .icon-tongxunlu:before { content: "\e606"; }
+.icon-caidandaohang:before { content: "\e610"; }

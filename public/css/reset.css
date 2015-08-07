@@ -46,7 +46,8 @@ input:focus{outline:none;}
 .clear{clear:both;}
 .relative{position:relative;}
 
-/*----------------------------------------------------------*/
+/* 框架
+----------------------------------------------------------*/
 html,body{height:100%;width:100%;}
 .wp{
     display:block;
@@ -70,7 +71,9 @@ html,body{height:100%;width:100%;}
     line-height:50px;font-size:25px;color:#aaa;
 }
 .wp-nav li:hover .iconfont{color:#fff;}
-.wp-nav li.on .iconfont{color:#fff;}
+.wp-nav li.on .iconfont{color:#fff;
+    text-shadow:1px 1px 0 #333;
+}
 
 .wp-nav-bottom{
     position:absolute;bottom:0;left:0;
@@ -108,3 +111,61 @@ html,body{height:100%;width:100%;}
     ::-webkit-scrollbar-corner {
           background-color: black;
     } /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+/* 文章详情
+----------------------------------------------------------*/
+.article{z-index:100;overflow:auto;
+    position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(0,0,0,.5);
+}
+.article-cont{
+    width:1000px;
+    min-height:100%;
+    margin:0 auto;
+    background:#fff;
+    box-shadow:1px 0 2px rgba(0,0,0,.3),-1px 0 2px rgba(0,0,0,.3);
+}
+
+.article-left{
+    padding:0 25px;
+    width:600px;height:100%;
+    border-right:1px solid #ddd;
+}
+.article-right{
+    position:absolute;
+}
+
+.article-left h1{
+    padding:40px 0 15px;
+    font-size:24px;line-height:30px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+.article-text{padding:20px;}
+.article-text p{
+    font-size:14px;line-height:24px;text-indent:2em;
+}
+.article-text img{
+    display:block;max-width:100%;
+    margin:10px auto;
+}
+.article-discuss{
+    height:200px;
+    border-top:1px solid #ddd;
+}
+
+.article-right{
+    position:fixed;top:0;left:50%;
+    margin-left:145px;
+    width:350px;height:500px;
+}
+.article-right > .close{
+    position:absolute;top:10px;right:10px;
+    width:50px;height:50px;
+    cursor:pointer;
+    line-height:50px;font-size:40px;color:#333;
+    transition:all ease-out .3s;
+}
+.article-right > .close:hover{
+    color:#d00;
+}
