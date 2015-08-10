@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>网站开发</title>
+	<title><%=title %></title>
 	<link rel="stylesheet" href="/css/reset.css" />
 	<link rel="stylesheet" href="/css/chat.css">
 	<link rel="stylesheet" href="/css/icon/iconfont.css">
@@ -29,11 +29,11 @@
 					<input id="txt_chat_search" type="text" />
 				</div>
 				<div class="chat-tab">
-					<a href="javascript:void(0)">
+					<a id="link_chat_dialog" href="javascript:void(0)">
 						<span class="iconfont">&#xe604;</span>
 						<em>对话</em>
 					</a>
-					<a href="javascript:void(0)">
+					<a id="link_friend_list" href="javascript:void(0)">
 						<span class="iconfont">&#xe606;</span>
 						<em>好友列表</em>
 					</a>
@@ -43,7 +43,7 @@
 					</a>
 				</div>
 				
-				<div class="chat-lists chat-dialogue">
+				<div id="hd_chat_list" class="chat-lists chat-dialogue">
 					<ul>
 						<li>
 							<span class="chat-photo"><img src="images/photo.png" /></span>
@@ -64,7 +64,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="chat-lists" style="display:none;">
+				<div id="hd_friend_list" class="chat-lists" style="display:none;">
 					<ul>
 						<li class="chat-ini">
 							<em>A</em>

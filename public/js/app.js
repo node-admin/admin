@@ -1,8 +1,9 @@
 requirejs.config({
 	baseUrl:'js/pages',
 	shim:{
-		'socket':{
-			exports:'SO'
+		'lib/socket':{
+			deps:[],
+			exports:'Socket'
 		}
 	},
 	paths:{

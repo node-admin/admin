@@ -8,7 +8,6 @@ module.exports = function(app){
 		res.render('chat',{title:'好友聊天'});
 	});
 
-
 	app.get('/work',function(req,res){
 		res.render('work',{title:'创作'});
 	})

@@ -1,20 +1,15 @@
-define(['jquery','lib/template'],function($,Tml){
-	// define(function(require){
-		console.log(223);
-		require(['lib/socket'],function(SO){
-			console.log(1);
-			var so = SO.connect();
-			so.on('connect',function(){
-				console.log('connect');
-			});
-			so.on('message',function(message){
-				console.log(message);
-			});
-			so.on('disconnect',function(){
-				console.log('disconnect');
-			});
-		});
-	// });
+define(['jquery','lib/template','lib/socket'],function($,Tml,Socket){
+	console.log(1);
+	var so = Socket.connect();
+	so.on('connect',function(){
+		console.log('connect');
+	});
+	so.on('message',function(message){
+		console.log(message);
+	});
+	so.on('disconnect',function(){
+		console.log('disconnect');
+	});
 	var active = 1;
 	return {
 		link_chat_dialog:$('#link_chat_dialog'),
@@ -45,7 +40,7 @@ define(['jquery','lib/template'],function($,Tml){
 			var source = '<ul>{{each list as value i}}<li>索引{{i + 1}}: {{value}}</li>{{/each}}</ul>';
 			var data = {title:'测试',list:['文艺','博客']};
 			var html = Tml.compile(source)(data);
-			console.log(html);
+			// console.log(html);
 		}
 	}
 })
